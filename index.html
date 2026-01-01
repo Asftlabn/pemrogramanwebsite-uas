@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio | Assyfatul Qalbina</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #eaf3ff;
+      transition: 0.3s;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background-color: #0d6efd !important;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 120px 0;
+      background: linear-gradient(135deg, #0d6efd, #0a58ca);
+      color: white;
+    }
+
+    .hero img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-bottom: 20px;
+    }
+
+    /* CARD UMUM */
+    .custom-card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(17, 93, 156, 0.1);
+      height: 100%;
+    }
+
+    /* MEDIA */
+    .media-card {
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+    .media-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #0567a8;
+      color: white;
+    }
+
+    /* DARK MODE */
+    .dark-blue {
+      background-color: #080808;
+      color: #e6f0ff;
+    }
+
+    .dark-blue .navbar,
+    .dark-blue footer {
+      background-color: #0c0c0c !important;
+    }
+
+    .dark-blue .custom-card,
+    .dark-blue .media-card {
+      background-color: #111111;
+      color: #e6f0ff;
+    }
+
+    .dark-blue .bg-light {
+      background-color: #0f0f0f !important;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Portofolio</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <button class="btn btn-outline-light btn-sm me-2" onclick="toggleDarkBlue()">🌙</button>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projek</a></li>
+        <li class="nav-item"><a class="nav-link" href="#multimedia">Media</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero text-center" id="home">
+  <div class="container">
+    <img src="UNPAM_logo1.png" alt="Foto Assyfatul Qalbina">
+    <h1 class="fw-bold">UNIVERSITAS PAMULANG</h1>
+  </div>
+</section>
+
+<!-- PROFILE -->
+<section id="profile" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Profile</h2>
+
+    <!-- FOTO PROFILE -->
+     <img src="foto syfa.jpeg" alt="Foto Profil" class="profile-img">
+   
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="custom-card text-start">
+          <p><b>Nama:</b> Assyfatul Qalbina</p>
+          <p><b>NIM:</b> 251011700492</p>
+          <p><b>Kelas:</b> 01SIFP008</p>
+          <p><b>Program Studi:</b> Sistem Informasi</p>
+          <p><b>Fakultas:</b> Ilmu Komputer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROJECT -->
+<section id="projects" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Projek</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="seminar agama.jpeg" class="card-img-top" style="height:200px; object-fit:cover;">
+          <div class="card-body">
+            <h5>Seminar Agama</h5>
+            <p>Seminar untuk memperdalam ilmu agama.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="pkkmb maba 2025.jpeg" class="card-img-top" style="height:200px; object-fit:cover;">
+          <div class="card-body">
+            <h5>PKKMB 2025</h5>
+            <p>Pengenalan lingkungan kampus.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="basis data.jpeg" class="card-img-top" style="height:200px; object-fit:cover;">
+          <div class="card-body">
+            <h5>Basis Data</h5>
+            <p>Normalisasi database 1NF, 2NF, 3NF.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- MEDIA -->
+<section id="multimedia" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Media</h2>
+
+    <!-- GAMBAR -->
+    <div class="row g-4 mb-5">
+      <div class="col-md-4">
+        <div class="media-card">
+          <img src="foto bersama.jpeg">
+          <p class="mt-2 text-center">foto bersama</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="media-card mb-4">
+      <h4 class="text-center mb-3">Video</h4>
+      <video controls width="100%">
+        <source src="unpam.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- AUDIO -->
+    <div class="media-card mb-4">
+      <h4 class="text-center mb-3">Audio</h4>
+      <audio controls class="w-100">
+        <source src="audio unpam.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <!-- DOKUMEN -->
+    <div class="media-card">
+      <h4 class="text-center mb-3">Dokumen</h4>
+      <ul>
+        <li><a href="dokumen.html" target="_blank">dokumen profile</a></li>        
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Kontak</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Nama</label>
+            <input type="text" class="form-control" placeholder="Nama">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Pesan</label>
+            <textarea class="form-control" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Kirim</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center py-3">
+  © 2025 Assyfatul Qalbina
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function toggleDarkBlue() {
+    document.body.classList.toggle('dark-blue');
+  }
+</script>
+
+</body>
+</html>
